@@ -1,8 +1,8 @@
 {
-  "name": "de-pharm",
+  "name": "de-pharma",
   "version": "1.0.0",
   "private": true,
-  "description": "DePharm",
+  "description": "DePharma",
   "author": "JeremyConnor",
   "keywords": [
     "gatsby"
