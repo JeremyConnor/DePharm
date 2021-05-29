@@ -47,11 +47,11 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const buyMedecines = () => {
+const buyMedicines = () => {
   navigate('/prescription');
 }
 
-export default function Medecine(props) {
+export default function Medicine(props) {
   const classes = useStyles();
 
   return (
@@ -61,8 +61,8 @@ export default function Medecine(props) {
           title: classes.title,
           subheader: classes.subheader,
         }}
-        title={"Medecine"}
-        subheader={"Buy medecines using a doctor's prescription"}
+        title={"Medicine"}
+        subheader={"Buy medicines using a doctor's prescription"}
         color="#94a1b2"
       />
       <CardMedia
@@ -71,7 +71,7 @@ export default function Medecine(props) {
       />
       <CardActions disableSpacing>
         <UploadButtons />
-        <Button variant="contained" color="primary" className={classes.buyButton} onClick={() => buyMedecines()}>
+        <Button variant="contained" color="primary" className={classes.buyButton} onClick={() => buyMedicines()}>
           Buy
         </Button>
       </CardActions>

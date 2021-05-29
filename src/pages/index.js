@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Vaccine from '../components/vaccine-card.js';
 import Equipments from '../components/equipments-card.js';
-import Medecine from '../components/medecine-card.js';
+import Medicine from '../components/medicine-card.js';
 
 // const drawerWidth = 240;
 
@@ -43,7 +43,7 @@ const IndexPage = (props) => {
             justify = "center"
           >
             <Vaccine />
-            <Medecine />
+            <Medicine />
             <Equipments />
           </Grid>
         </div>
