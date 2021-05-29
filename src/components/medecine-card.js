@@ -5,6 +5,8 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
+import { navigate } from "gatsby";
+import UploadButtons from "./button.js"
 // import { shadows } from "@material-ui/system";
 
 const useStyles = makeStyles((theme) => ({
@@ -36,11 +38,18 @@ const useStyles = makeStyles((theme) => ({
     // paddingTop: '56.25%', // 16:9
     objectFit: 'fit',
   },
+  input: {
+    display: 'none',
+  },
   buyButton: {
     margin: 'auto',
     background: '#7f5af0',
   }
 }));
+
+const buyMedecines = () => {
+  navigate('/prescription');
+}
 
 export default function Medecine(props) {
   const classes = useStyles();
@@ -61,7 +70,8 @@ export default function Medecine(props) {
         image={"https://images.pexels.com/photos/208512/pexels-photo-208512.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}
       />
       <CardActions disableSpacing>
-        <Button variant="contained" color="primary" className={classes.buyButton}>
+        <UploadButtons />
+        <Button variant="contained" color="primary" className={classes.buyButton} onClick={() => buyMedecines()}>
           Buy
         </Button>
       </CardActions>

@@ -1,16 +1,3 @@
-// import * as React from "react";
-// import Layout from '../components/layout';
-
-// const IndexPage = () => {
-//     return (
-//         <Layout pageTitle="Home Page">
-//             <p>This webpage is a step to create DePharm</p>
-//         </Layout>
-//     )
-// }
-
-// export default IndexPage;
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
@@ -41,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const IndexPage = (props) => {
-  const { window } = props;
+  // const { window } = props;
   const classes = useStyles();
   // const theme = useTheme();
 
