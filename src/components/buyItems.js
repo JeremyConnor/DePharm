@@ -38,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const buy = () => {
+  console.log("Clicking buy!");
+}
+
 export default function BuyItems(props) {
   const classes = useStyles();
 
@@ -49,7 +53,7 @@ export default function BuyItems(props) {
           subheader: classes.subheader,
         }}
         title={props.dataFromParent["name"]}
-        subheader={props.dataFromParent["location"]}
+        subheader={props.dataFromParent["price"]}
         color="#94a1b2"
       />
       <CardMedia
@@ -57,7 +61,7 @@ export default function BuyItems(props) {
         image={`https://ipfs.io/ipfs/${props.dataFromParent["uri"]}`}
       />
       <CardActions disableSpacing>
-        <Button variant="contained" color="primary" className={classes.buyButton} onClick={console.log("Clicking Buy!")}>
+        <Button variant="contained" color="primary" className={classes.buyButton} onClick={buy}>
           Buy
         </Button>
       </CardActions>

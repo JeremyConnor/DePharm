@@ -46,6 +46,10 @@ const useStyles = makeStyles((theme) => ({
 const buyEquipments = () => {
   // navigate('/equipments');
   // console.log("Hello!");
+  if (typeof window !== "undefined") {
+    navigate(`/equipments`);
+  } 
+
 }
 
 export default function Equipments(props) {
@@ -67,7 +71,7 @@ export default function Equipments(props) {
         image={"https://images.pexels.com/photos/5125690/pexels-photo-5125690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}
       />
       <CardActions disableSpacing>
-        <Button variant="contained" color="primary" className={classes.buyButton} onClick={buyEquipments()}>
+        <Button variant="contained" color="primary" className={classes.buyButton} onClick={buyEquipments}>
           Buy
         </Button>
       </CardActions>
