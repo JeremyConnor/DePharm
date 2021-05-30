@@ -5,18 +5,33 @@ import BuyItems from '../components/buyItems';
 import medicine from '../json/medicine.json';
 import Grid from '@material-ui/core/Grid';
 import NavBar from '../components/navBar';
+import Background from '../images/background.jpg';
 
 // const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    // display: 'flex',
+    // // backgroundColor: 'white',
+    // backgroundColor: '#eedfcc',
+    // // height: "100vh",
+    // width: "100%",
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    backgroundImage: `url(${Background})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    opacity: 0.8,
+    backgroundColor: 'rgba(20,19,19,0.7)',
+    //// display: 'flex',
     // backgroundColor: 'white',
-    backgroundColor: '#eedfcc',
-    // height: "100vh",
+    //// backgroundColor: '#eedfcc',
+    height: "100vh",
+    //// marginTop: theme.spacing(4),
+    ////flex: 1,
+    flexGrow: 1,
     width: "100%",
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -36,7 +51,7 @@ function Medicine(props) {
   // const theme = useTheme();
 
   return (
-    <div style={{width: '100vw', height: '100vh', flexGrow: 1, backgroundColor: '#eedfcc'}}>
+    <>
       <NavBar />
       <div className={classes.root}>
         <main className={classes.content}>
@@ -53,7 +68,7 @@ function Medicine(props) {
           </div>
         </main>
       </div>
-    </div>
+    </>
   );
 }
 

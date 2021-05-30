@@ -6,17 +6,24 @@ import Medicine from '../components/medicine-card.js';
 import { Alert, AlertTitle } from '@material-ui/lab';
 import { Typography } from '@material-ui/core';
 import NavBar from '../components/navBar';
+import Background from '../images/background.jpg';
 
 // const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    backgroundImage: `url(${Background})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    opacity: 0.8,
+    backgroundColor: 'rgba(20,19,19,0.7)',
+    //// display: 'flex',
     // backgroundColor: 'white',
-    backgroundColor: '#eedfcc',
-    // height: "100vh",
-    marginTop: theme.spacing(4),
-    flex: 1,
+    //// backgroundColor: '#eedfcc',
+    height: "100vh",
+    //// marginTop: theme.spacing(4),
+    ////flex: 1,
     flexGrow: 1,
     width: "100%",
   },
@@ -46,29 +53,29 @@ const IndexPage = (props) => {
   }
 
   return (
-    <div style={{width: '100vw', height: '100vh', flexGrow: 1, backgroundColor: '#eedfcc'}}>
-    <NavBar />
-    <div className={classes.root}>
-      <main className={classes.content}>
-        <div>
-          { alert &&
-            <Alert severity="success" onClose={closeAlert}>
-                <AlertTitle>Success</AlertTitle>
-                <Typography>Prescription under review, uploaded Successfully! Your file hash is <Typography display="inline" style={{fontWeight: 'bold'}} >{alert.hash}</Typography></Typography>
-            </Alert>
-          }
-          <Grid
-            container 
-            spacing={0}
-            alignItems = "center"
-            justify = "center"
-          >
-            <Medicine showAlert={showAlert} />
-          </Grid>
-        </div>
-      </main>
-    </div>
-    </div>
+    <>
+      <NavBar />
+      <div className={classes.root}>
+        <main className={classes.content}>
+          <div>
+            { alert &&
+              <Alert severity="success" onClose={closeAlert}>
+                  <AlertTitle>Success</AlertTitle>
+                  <Typography>Prescription under review, uploaded Successfully! Your file hash is <Typography display="inline" style={{fontWeight: 'bold'}} >{alert.hash}</Typography></Typography>
+              </Alert>
+            }
+            <Grid
+              container 
+              spacing={0}
+              alignItems = "center"
+              justify = "center"
+            >
+              <Medicine showAlert={showAlert} />
+            </Grid>
+          </div>
+        </main>
+      </div>
+    </>
   );
 }
 
