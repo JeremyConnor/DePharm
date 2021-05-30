@@ -5,6 +5,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
+import { navigate } from "gatsby";
 // import { shadows } from "@material-ui/system";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,6 +43,11 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const buyEquipments = () => {
+  // navigate('/equipments');
+  // console.log("Hello!");
+}
+
 export default function Equipments(props) {
   const classes = useStyles();
 
@@ -61,7 +67,7 @@ export default function Equipments(props) {
         image={"https://images.pexels.com/photos/5125690/pexels-photo-5125690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"}
       />
       <CardActions disableSpacing>
-        <Button variant="contained" color="primary" className={classes.buyButton}>
+        <Button variant="contained" color="primary" className={classes.buyButton} onClick={buyEquipments()}>
           Buy
         </Button>
       </CardActions>

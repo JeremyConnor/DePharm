@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Ashbury-Haight",
+		"location": "54.682N, -167.722W",
+		"uri": "QmWDHk1qtxmwXd5AanY3rx4jMxNexbPcrLEyAAZ6bLaevZ"
+	},
+	{
+		"name": "Sample Image 2",
+		"location": "-24.123N, -125.373W",
+		"uri": "QmY3VgWSp1iQGf3YQEoSi2zgKWLZfcBs3Lar6ceUQzxH2R"
+	},
+	{
+		"name": "Sample Image 3",
+		"location": "11.042N, -180.753W",
+		"uri": "QmNrFXES3YU6sMnH75SnBHhgnbQaffkEcy5HeVPv9PSqXq"
+	},
+	{
+		"name": "Sample Image 4",
+		"location": "59.571N, 29.485W",
+		"uri": "QmXG4cTfEj1LddTVfbc7QgAwTV5ajb9pfeDakHuyfC7Jkg"
+	},
+	{
+		"name": "Halo-Volcano",
+		"location": "-66.835N, 168.514W",
+		"uri": "Qma8tyWouDDVuHgmssmqQLgqk6g5UovXBF377oighayQWQ"
+	},
+	{
+		"name": "On-dash device",
+		"location": "-7.016N, -31.395W",
+		"uri": "QmWeyJ4su8n1ahWHdJjpkM8m5LGYvoM4iWstFQ6XAf8QvS"
+	},
+	{
+		"name": "Sample Image 7",
+		"location": "35.324N, 37.314W",
+		"uri": "QmTznWXzVgLEFw3kG6nt56y4rvdyKADjkjhL4LNcHxegFA"
+	}
+]
