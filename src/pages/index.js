@@ -2,8 +2,6 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Vaccine from '../components/vaccine-card.js';
-import Equipments from '../components/equipments-card.js';
 import Medicine from '../components/medicine-card.js';
 import { Alert, AlertTitle } from '@material-ui/lab';
 import { Typography } from '@material-ui/core';
@@ -65,9 +63,7 @@ const IndexPage = (props) => {
             alignItems = "center"
             justify = "center"
           >
-            <Vaccine />
             <Medicine showAlert={showAlert} />
-            <Equipments />
           </Grid>
         </div>
       </main>
