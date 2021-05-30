@@ -14,7 +14,6 @@ DePharma is an ecosystem with the following features -
 4. Fundraising raffle - Create raffle fundraising event with POAP.
 5. Create POLL - Create a Poll with POAP.
 
-![Architecture Logo](./Images/architect.png)
 
 ## Future of this project - 
 
@@ -27,9 +26,16 @@ DePharma is an ecosystem with the following features -
 
 ## Tools and technologies used - 
 
-1. [Unlock Protocol](https://unlock-protocol.com/)
-2. [POAP - The Proof of Attendance Protocol](https://www.poap.xyz/)
-3. [Pinata](https://pinata.cloud/)
-4. Gatsby
-5. React js
-6. Node/ Express
+1. [Unlock Protocol](https://unlock-protocol.com/) {Implemented by : Pranshu Rastogi and Ishita Rastogi}
+2. [POAP - The Proof of Attendance Protocol](https://www.poap.xyz/) {Implemented by : Pranshu Rastogi and Ishita Rastogi}
+3. [Pinata](https://pinata.cloud/) {Implemented by : JeremyConnor (a.k.a. Manul Singh Parihar)}
+4. Gatsby {Implemented by JeremyConnor}
+5. React js {Implemented by JeremyConnor}
+6. Node/ Express {Implemented by Pranshu Rastogi}
+
+
+## Team -
+
+1. [Pranshu Rastogi](https://github.com/pranshurastogi)
+2. [Manul Singh Parihar](https://github.com/JeremyConnor)
+3. [Ishita Rastogi](https://github.com/ishitarastogi)
