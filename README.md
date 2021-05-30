@@ -1,10 +1,8 @@
 # DePharma : A Decentralized Pharmacy
 DePharma is a blockchain ecosystem for providing, scheduling and processing vaccines, drugs and medical equipments.
 
-# Visit Webpage: [DePharma](https://depharma.gatsbyjs.io)
 
-
-# Project Name  : ***DePharma***
+# Project Name  : [DePharma](https://depharma.gatsbyjs.io)
 
 ## What we're building - 
 
