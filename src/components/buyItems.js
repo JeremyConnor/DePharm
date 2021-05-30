@@ -24,13 +24,13 @@ const useStyles = makeStyles((theme) => ({
   title: {
     // color: '#fffffe',
     // color: 'black',
-    color: 'white',
+    color: 'black',
     fontWeight:'600',
   },
   subheader: {
     // color: '#94a1b2',
     // color: 'black',
-    color: 'white',
+    color: 'black',
     fontWeight:'300',
   },
   media: {
