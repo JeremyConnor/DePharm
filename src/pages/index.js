@@ -56,7 +56,7 @@ const IndexPage = (props) => {
           { alert &&
             <Alert severity="success" onClose={closeAlert}>
                 <AlertTitle>Success</AlertTitle>
-                <Typography>Prescription uploaded Successfully! — <Typography display="inline" style={{fontWeight: 'bold'}} >{alert.hash}</Typography></Typography>
+                <Typography>Prescription under review, uploaded Successfully! Your file hash is <Typography display="inline" style={{fontWeight: 'bold'}} >{alert.hash}</Typography></Typography>
             </Alert>
           }
           <Grid
